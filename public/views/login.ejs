@@ -1,0 +1,26 @@
+<% include head %>
+
+<link href="/stylesheets/login.css" rel="stylesheet" type="text/css">
+<script src="/javascripts/login.js"></script>
+
+<div class="login-area" id="login">
+	<form accept-charset="UTF-8" action="/users/login" method="post">
+		<div class="login-form-header">
+			<h1 data-localize="login.headerText"></h1>
+		</div>
+		<div class="form-body">
+			<label for="login_account" data-localize="login.emailLabel">
+			</label>
+			<input autocapitalize="off" autocorrect="off" autofocus="autofocus" class="input-block" id="login_account" name="account" placeholder="" tabindex="1" type="email" data-localize="login.emailLabel">
+
+			<label for="login_password" data-localize="login.passwordLabel">
+				<a tabindex="2" href="/users/forgot_password" data-localize="login.forgetPasswordLabel"></a>
+			</label>
+			<input class="input-block" id="login_password" name="password" placeholder="" tabindex="3" type="password" data-localize="login.passwordLabel">
+			
+			<input class="button" tabindex="4" type="submit" value="" data-localize="login.submitLabel">
+		</div>
+	</form>
+</div>
+
+<% include foot %>

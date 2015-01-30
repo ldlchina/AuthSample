@@ -1,0 +1,142 @@
+@charset "utf-8";
+body {
+	min-width: 600px;
+}
+
+body, input, select, textarea, button {
+	font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+	line-height: 1.4;
+}
+
+label {
+	font-weight: bold;
+}
+
+.button {
+	position: relative;
+	padding: 7px 12px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	display: inline-block;
+	background-color: #eeeeee;
+	background-image: linear-gradient(#fcfcfc, #eee);
+	background-repeat: repeat-x;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+}
+
+.button:hover, .button:active {
+	text-decoration: none;
+	background-color: #dddddd;
+	background-image: -moz-linear-gradient(#eee, #ddd);
+	background-image: -webkit-linear-gradient(#eee, #ddd);
+	background-image: linear-gradient(#eee, #ddd);
+	background-repeat: repeat-x;
+	border-color: #ccc;
+}
+
+footer {
+	display: none;
+}
+
+#footer-content {
+	text-align: center;
+}
+
+#header-auth {
+	float: right;
+}
+
+#logo {
+	font-size: 24px;
+	font-weight: bold;
+	color: #353535;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.active {
+	font-weight: bold;
+	color: #353535;
+}
+
+a:active {
+	color: #353535;
+}
+
+a:hover {
+	color: #4183c4;
+	cursor:pointer;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ol {
+	list-style-type: none;
+}
+
+nav a {
+	margin-left: 5px;
+}
+
+.modal {
+	background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	overflow: auto;
+}
+
+.modal-inner {
+	margin: 100px auto;
+	width: 500px;
+}
+
+.modal-display-area {
+	padding: 30px;
+	background-color: #fff;
+	overflow: hidden;
+	color: #717171;
+	border-radius: 3px;
+}
+
+form {
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+
+.form-body {
+	padding: 20px;
+	font-size: 14px;
+	background-color: #fff;
+	border: 1px solid #d8dee2;
+	border-top: 0;
+	border-radius: 0 0 3px 3px;
+}
+
+.form-body .input-block {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.form-modal {
+	box-shadow: 0 0 0 rgba(0, 0, 0, 1);
+}
+
+.form-body-modal {
+	border: 0;
+}

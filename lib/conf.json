@@ -1,0 +1,23 @@
+{
+    "build": "dev",
+    "port": "3000",
+    "secure": true,
+    "dev": {
+        "home": "http://localhost:3000",
+        "db": {
+            "host": "localhost",
+            "port": 27017,
+            "name": "auth"
+        },
+		"node_env":"development"
+    },
+	"prod":{
+		"home": "http://localhost:3000",
+        "db": {
+            "host": "localhost",
+            "port": 27017,
+            "name": "auth"
+        },
+		"node_env":"production"
+	}
+}

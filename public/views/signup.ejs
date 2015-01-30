@@ -1,0 +1,37 @@
+<% include head %>
+
+<link href="/stylesheets/login.css" rel="stylesheet" type="text/css">
+<script src="/javascripts/signup.js"></script>
+
+<div class="login-area" id="signup">
+	<form accept-charset="UTF-8" action="/users/signup" method="post">
+		<div class="login-form-header">
+			<h1 data-localize="signup.headerText"></h1>
+		</div>
+		<div class="form-body">
+			<label for="signup_firstname" data-localize="signup.firstNameLabel">
+			</label>
+			<input autocapitalize="off" autocorrect="off" autofocus="autofocus" class="input-block" id="signup_firstname" name="firstname" placeholder="" tabindex="1" type="text" data-localize="signup.firstNameLabel">
+
+			<label for="signup_lastname" data-localize="signup.lastNameLabel">
+			</label>
+			<input autocapitalize="off" autocorrect="off" autofocus="autofocus" class="input-block" id="signup_lastname" name="lastname" placeholder="" tabindex="2" type="text" data-localize="signup.lastNameLabel">
+			
+			<label for="signup_email" data-localize="signup.emailLabel">
+			</label>
+			<input autocapitalize="off" autocorrect="off" autofocus="autofocus" class="input-block" id="signup_email" name="email" placeholder="" tabindex="3" type="email" data-localize="signup.emailLabel">
+			
+			<label for="signup_password" data-localize="signup.passwordLabel">
+			</label>
+			<input class="input-block" id="signup_password" name="password" placeholder="" tabindex="4" type="password" data-localize="signup.passwordLabel">
+			
+			<label for="signup_repassword" data-localize="signup.rePasswordLabel">
+			</label>
+			<input class="input-block" id="signup_repassword" name="repassword" placeholder="" tabindex="5" type="password" data-localize="signup.rePasswordLabel">
+			
+			<input class="button" tabindex="6" type="submit" value="" data-localize="signup.submitBtnValue">
+		</div>
+	</form>
+</div>
+
+<% include foot %>
